@@ -1,0 +1,5 @@
+<h2><%= markdown @article.title %></h2>
+<ul>
+  <li><%= markdown @article.content %></li>
+  <li><%= link_to "Back", '/articles' %>/<%= link_to "Delete", article_path(@article), method: :delete %>/<%= link_to "Edit", edit_article_path(@article) %></li>
+</ul>
